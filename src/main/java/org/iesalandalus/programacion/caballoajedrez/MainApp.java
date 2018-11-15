@@ -7,6 +7,6 @@ import org.iesalandalus.programacion.utilidades.Entrada;
 public class MainApp {
 	
 	public static void main(String[] args) {
-		System.out.println("Programa para aprender a colocar y mover un caballo en el tablero de ajedrez");
+		System.out.println("Programa para aprender a colocar y mover un caballo en el tablero de ajedrez y prueba de commit");
 	}
 }
