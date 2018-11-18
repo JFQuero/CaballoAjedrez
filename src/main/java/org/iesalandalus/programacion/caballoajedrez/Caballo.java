@@ -21,6 +21,21 @@ public class Caballo {
 			posicion = new Posicion(1,'b');
 		}
 	}
+	
+	public Caballo(Color color, char columna) {
+        setColor(color);
+        if (color == null) {
+			throw new IllegalArgumentException("ERROR: No se puede asignar un color nulo.");
+		}
+        if (columna !='b' & columna!='g') {
+        	throw new IllegalArgumentException("ERROR: Columna inicial no válida.");
+        }
+        if (color == Color.BLANCO) {
+        	posicion = new Posicion(1,columna);
+        } else {
+        	posicion = new Posicion(8,columna);
+        }
+    }
 
 	/* Metodos para color */
 	public Color getColor() {
