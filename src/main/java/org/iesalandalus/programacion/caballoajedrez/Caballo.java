@@ -14,6 +14,9 @@ public class Caballo {
 	public Caballo(Color color) {
 		this();
 		setColor(color);
+		if (color == null) {
+			throw new IllegalArgumentException("ERROR: No se puede asignar un color nulo.");
+		}
 		if (color == Color.BLANCO) {
 			posicion = new Posicion(1,'b');
 		}
