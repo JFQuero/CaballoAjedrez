@@ -10,13 +10,21 @@ public class Caballo {
 		color = Color.NEGRO;
 		posicion = new Posicion(8,'b');
 	}
+	
+	public Caballo(Color color) {
+		this();
+		setColor(color);
+		if (color == Color.BLANCO) {
+			posicion = new Posicion(1,'b');
+		}
+	}
 
 	/* Metodos para color */
 	public Color getColor() {
 		return color;
 	}
 
-	public void setColor(Color color) {
+	private void setColor(Color color) {
 		this.color = color;
 	}
 
@@ -25,7 +33,7 @@ public class Caballo {
 		return posicion;
 	}
 	
-	public void setPosicion(Posicion posicion) {
+	private void setPosicion(Posicion posicion) {
 		this.posicion = posicion;
 	}
 }
