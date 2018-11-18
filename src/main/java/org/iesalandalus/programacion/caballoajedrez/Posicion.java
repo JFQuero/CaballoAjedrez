@@ -10,27 +10,45 @@ public class Posicion {
 	private static final char COLUMNA_MIN = 'a';
 	private static final char COLUMNA_MAX = 'h';
 
+	/* Constructores */
+
+	public Posicion(int fila, char columna) {
+		if (fila < FILA_MIN | fila > FILA_MAX) {
+			throw new IllegalArgumentException("ERROR: Fila no válida.");
+		} else {
+			setFila(fila);
+			;
+		}
+		if (columna < COLUMNA_MIN | columna > COLUMNA_MAX) {
+			throw new IllegalArgumentException("ERROR: Columna no válida.");
+		} else {
+			setColumna(columna);
+		}
+	}
+
+	/* Metodos para fila */
 	public void setFila(int fila) {
 		if (fila < FILA_MIN | fila > FILA_MAX) {
-			throw new IllegalArgumentException("El valor introducido para la fila no es correcto.");
+			throw new IllegalArgumentException("ERROR: Fila no válida.");
 		} else {
 			this.fila = fila;
 		}
 	}
 
-	public int getFila(int fila) {
+	public int getFila() {
 		return fila;
 	}
 
+	/* Metodos para Columna */
 	public void setColumna(char columna) {
 		if (columna < COLUMNA_MIN | columna > COLUMNA_MAX) {
-			throw new IllegalArgumentException("El valor introducido para la columna no es correcto");
+			throw new IllegalArgumentException("ERROR: Columna no válida.");
 		} else {
 			this.columna = columna;
 		}
 	}
 
-	public char getColumna(char columna) {
+	public char getColumna() {
 		return columna;
 	}
 }
