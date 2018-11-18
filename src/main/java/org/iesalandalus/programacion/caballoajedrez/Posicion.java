@@ -61,6 +61,11 @@ public class Posicion {
 	}
 
 	@Override
+	public String toString() {
+		return "[fila=" + fila + ", columna=" + columna + "]";
+	}
+
+	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
