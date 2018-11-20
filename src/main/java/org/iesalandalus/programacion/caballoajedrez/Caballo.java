@@ -183,4 +183,9 @@ public class Caballo {
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "Caballo [posición=" + posicion + ", color=" + color + "]";
+	}
 }
