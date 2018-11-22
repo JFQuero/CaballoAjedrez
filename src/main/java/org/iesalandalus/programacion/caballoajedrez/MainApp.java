@@ -61,6 +61,7 @@ public class MainApp {
 			break;
 		case 5:
 			System.out.println("¡Adios!");
+			System.exit(0);
 			break;
 		}
 	}
