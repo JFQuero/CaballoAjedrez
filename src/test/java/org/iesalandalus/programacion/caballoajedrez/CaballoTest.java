@@ -99,7 +99,7 @@ public class CaballoTest {
 			caballoNegroDefecto.mover(Direccion.IZQUIERDA_ARRIBA);
 			assertEquals(new Posicion(8, 'b'), caballoNegroDefecto.getPosicion());
 		} catch (OperationNotSupportedException e) {
-			// No deber√≠a saltar ninguna excepci√≥n ya que los movimientos son v√°lidos
+			fail("No deberÌa saltar ninguna excepciÛn ya que los movimientos son v·lidos.");
 		}
 	}
 	
